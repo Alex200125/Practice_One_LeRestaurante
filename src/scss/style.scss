@@ -1,0 +1,22 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") forma("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+}
+
+@import 'reset';
+@import 'fonts';
+@import 'base/variables';
+@import 'base/animations';
+@import 'base/mixins';
+@import 'base/media';
+@import 'blocks/button';
+@import 'blocks/geometric_figure';
+
+@import 'blocks/main';
+@import 'blocks/header';
+
+
+

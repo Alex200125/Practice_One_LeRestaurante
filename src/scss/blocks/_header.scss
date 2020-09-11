@@ -33,6 +33,10 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        transform: translateX(4px);
+        transform: translate(7px, 44px);
+        margin-bottom: 373px;
+    }
+    &__logo {
+        transform: translateX(-23px);
     }
 }

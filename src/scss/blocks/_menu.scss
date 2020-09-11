@@ -1,0 +1,86 @@
+.menu {
+    min-height: 999px;
+    &__title {
+        font-family: 'Myriad_Pro_Italic';
+        font-size: 42px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $button_color;
+        text-align: center;
+        margin-top: 81px;
+    }
+    .figure {
+        width: 44px;
+        height: 27px;
+        background: radial-gradient(circle at 30px 10px, transparent 8px, $button_color 8px) -30px -37px;
+        &__title {
+            font-family: 'MyriadPro-Regular';
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 27px;
+        }
+    }
+    &__subcontent {
+        display: flex;
+        justify-content: center;
+        margin-top: 41px;
+    }
+    &__subtitle {
+        font-family: 'Myriad_Pro_Italic';
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #2b2b2b;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        &:first-child {
+            margin-right: 81px;
+        }
+    }
+    &__icon {
+        margin-right: 31px;
+    }
+    &__item {
+        display: flex;
+        margin-top: 40px;
+        align-items: center;
+        border-radius: 20px;
+        transition: .4s all;
+        &:hover {
+            box-shadow: 2px 3px 10px 3px #2b2b2b;
+            transform: scale(1.03);
+        }
+    }
+    &__name {
+        font-family: 'MyriadPro-Regular';
+        font-weight: 600;        
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #2b2b2b;
+        margin-right: 7px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__allergens {
+        margin-top: 10px;
+        font-family: 'MyriadPro It';
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #bcbcbc;
+    }
+}

@@ -1,20 +1,22 @@
 .main {
-    min-height: 1103px;
+    position: relative;
+    max-height: 1103px;
     background: url('../img/header_2.webp') 51% center no-repeat,url('../img/header_1.jpg') -2% center no-repeat,url('../img/header_3.jpg') right center no-repeat;
-    padding: 48px;
+    background-size: auto auto;
+    padding: 48px 77px 48px 71px;
     &__content {
         position: relative;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
     }
     &__figures {
-        // width: inherit;
         display: flex;
     }
     .figure {
         padding: 44px 70px 32px 69px;
+        transform: translateY(30px);
         &__text {
             font-family: 'MyriadPro-Bold';
             font-size: 38px;
@@ -34,25 +36,46 @@
         &:nth-child(odd) {
             opacity: 0.4;
             position: absolute;
+            transform: translateY(17px);
+            &:hover {
+                transform: translateY(17px) scale(1.04);
+            }
         }
         &:first-child {
             left: 0;
             margin-left: 0;
         }
         &:last-child {
-            right: 77px;
+            // right: 77px;
+            right: 0px;
         }
         &:nth-child(2) {
             margin: 0;
             transform: translateY(-21%);
             &:hover {
-                transform: translateY(-21%) scale(1.03);
+                transform: translateY(-21%) scale(1.04);
             }
         }
         &:hover {
             opacity: 0.85;
+            // background-color: #ffffff;
+            background: radial-gradient(circle at 30px 30px, transparent 30px, #ffffff 30px) -30px -30px;
             box-shadow: 4px 4px 40px 4px #000;
-            transform: scale(1.03);
+            transform: translateY(30px) scale(1.03);
         }
+    }
+    &__line {
+        display: block;
+        position: absolute;
+        top: 197px;
+        right: -520px;
+        height: 3px;
+        width: 100%;
+        // max-width: 938px;
+        background-color: #f1ac11;
+        transform: rotate(108deg);
+    }
+    &__line:last-child {
+        left: -277px;
     }
 }

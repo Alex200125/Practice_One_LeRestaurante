@@ -36,6 +36,10 @@
         position: absolute;
         top: 0;
         left: 0;
+        img {
+            width: 10px;
+            margin-right: 19px;
+        }
     }
     &__items {
         display: flex;
